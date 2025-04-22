@@ -4,13 +4,30 @@
     border: 2px solid red;
 }
 html{
-    background-color: black;
+    /*background-color: black;*/
     font-family: Nunito; 
     color: bisque;
 }
+body{
+    background-color: black;
+    
+}
+
+.background{
+    align-items: center;
+    display: flex;
+    width: 80vw;
+    height: 70vh;
+    
+}
 .plant_pic{
-    width: max(25%, 250px);
-    height: max(25%, 250px);
+    width: min(100%, 250px);
+    height: min(100%, 250px);
+    position: absolute;
+}
+.logo{
+    width: max(15%, 70px);
+    height: max(10%, 50px);
 }
 .img_footer{
     color: floralwhite;
