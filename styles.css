@@ -1,0 +1,14 @@
+/*styles.css*/
+html{
+    background-color: black;
+}
+.plant_pic{
+    width: max(25%, 250px);
+    height: max(25%, 250px);
+}
+.img_footer{
+    color: floralwhite;
+}
+a{
+    color: floralwhite;
+}
