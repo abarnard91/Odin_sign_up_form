@@ -1,6 +1,12 @@
 /*styles.css*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+*{
+    border: 2px solid red;
+}
 html{
     background-color: black;
+    font-family: Nunito; 
+    color: bisque;
 }
 .plant_pic{
     width: max(25%, 250px);
