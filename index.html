@@ -9,40 +9,58 @@
 </head>
 <body>
     <div class="background">
-        <img class= "plant_pic" src="/imgs/background_img.jpeg" alt="A budding evergreen plant in a pot with a unfocused forest background">
+        <div class= "left_container">
+            <img class= "plant_pic" src="/imgs/background_img.jpeg" alt="A budding evergreen plant in a pot with a unfocused forest background">
+                        
             <div class="logo_container">
-              <div>above the logo</div>
-              <div class="logo_continer">logo box
-                    <img class="logo" src="imgs/sub_attack_colorized.png" alt="yellow submarine being attacked by a trichomonas vaginalis">
-                    <div>Trichs</div>
-              </div>  
-            </div>
+                <img class="logo" src="imgs/sub_attack_colorized.png" alt="yellow submarine being attacked by a trichomonas vaginalis">
+                <div class="logo_name">Trichy Business</div>
+            </div> 
+            <div class = "img_footer"> Photo by <a href="https://unsplash.com/@fr0ggy5">fr0ggy5</a> on <a href="https://www.upsplash.com">Upsplash</a></div>
+        </div>
+        <div class="right_container">
             <form action="https://httpbin.org/post" method = "post">
-                <div> above form stuff blah blah blah
+                <div class="call_to_action"> 
+                    <p>This is your chance to join in on the greatest experience of your <strong>Life</strong>!</p>
+                    <p> Your kids will be as meaningless as a houseplant when you devote your time to <i> us!</i></p>
+                    <p>Make that change!</p> 
                 </div>
-                Well HI!
+                
                 <fieldset>
-                    <label for = "first_name"> First Name  </label>
-                    <input type ="text" name = "first_name" id = "first_name">
-                    <label for = "last_name"> Last Name </label>
-                    <input type = "text" name = "last_name" id = "last_name">
-                    <label for = "user_email"> Email </label>
-                    <input type = "email" id="user_email" name = "email">
-                    <label for = "phone_number">Phone Number</label>
-                    <input type = "number" id = "phone_number" name = "phone_number">
-                    <label for="user_password">Password</label>
-                    <input type="password" id="user_password" name = "password">
-                    <label for="repeat_password">Repeat Password</label>
-                    <input type="password" id = "repeat_password" name = "repeat_password">
+                    <div class="fieldset_header">Sign Up Here!</div>
+                    <div class="column_container">
+                        <div class="left_column">
+                            <label for = "first_name"> First Name  </label>
+                            <input type ="text" name = "first_name" id = "first_name">
+                        
+                            <label for = "user_email"> Email </label>
+                            <input type = "email" id="user_email" name = "email">
+                            
+                            <label for="user_password">Password</label>
+                            <input type="password" id="user_password" name = "password">
+                        </div>
+                        <div class="right_column">
+                            <label for = "last_name"> Last Name </label>
+                            <input type = "text" name = "last_name" id = "last_name">
+
+                            <label for = "phone_number">Phone Number</label>
+                            <input type = "number" id = "phone_number" name = "phone_number">
+                            
+                            <label for="repeat_password">Repeat Password</label>
+                            <input type="password" id = "repeat_password" name = "repeat_password">
+                        </div>
+                    </div>
                 </fieldset>
                 <div>
                     <button type ="submit">Create Account</button>
                 </div>
 
             </form>
-            <div>Already have an account? <a href = "https://www.reddit.com/r/gadgets" >Log In</a></div>
+            <div>Already have an account? <a href = "https://www.reddit.com/r/gadgets" >Log In</a>
+            </div>
+        </div>
             
     </div>
-    <footer class = "img_footer"> By <a href="https://unsplash.com/@fr0ggy5">fr0ggy5</a> on <a href="https://www.upsplash.com">Upsplash</a></footer>
+    
 </body>
 </html>
