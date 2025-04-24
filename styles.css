@@ -1,7 +1,7 @@
 /*styles.css*/
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 *{
-    /*border: 1px solid red;*/
+    border: 1px solid red;
 }
 html{
 
@@ -19,7 +19,7 @@ body{
     display: flex;
     width: max(80vw,100vw);
     height: min(80vh,100vh);
-    background-color: blanchedalmond;
+    background-color: rgb(241, 239, 237);
     margin-top: 5vh;
     margin-left: 2%;
     margin-right: 2%;
@@ -39,29 +39,38 @@ body{
 }
 .logo_container{
     display: flex;
-    width: 100%; 
-    height: max(20%, 70px);
+    flex: 1;
     margin-top: -60vh;
     color:antiquewhite;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: right;
     align-items: center;
     background-color:rgba(15, 39, 58, 0.5);
 }
 .logo{
-    width: max(20%);
-    height: max(80%, 50%);
-    margin-left: 15vw; 
+    
+    --height: 60%;
+    width: calc(var(--height)*0.5);
+    height: var(--height);
     border: 6px solid rgb(27, 7, 143); 
     border-radius: 50%; 
+    margin-right: 5%;
+    
 }
 .logo_name{
+    display:flex;
     font-weight: 700;
     font-size: 32px;
+    height:80%;
+    width: 40%;
+    line-height: 90%;
+    justify-content: space-around;
+    align-items: center;   
 }
 .img_footer{
     margin-top:40vh;
     text-align: center;
+    font-size: small;
     color:  floralwhite;
 }
 .img_footer a{
@@ -70,20 +79,33 @@ body{
 
 .right_container{
     flex: 3 1 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid green;
+    height: 65%;   
+
 }
 .call_to_action{
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    align-items:flex-start;
+    flex: 1;
     font-weight: 700;
     font-size: large;
+    padding-left: 5%;
+    border: 2px solid orange;
+    justify-content: space-evenly;
 }
+
 .call_to_action p{
-    margin: 0px;
-    padding: 0px;
-    line-height: 90%;
+    line-height: 90%;   
 }
+
+.call_to_action > p + p{
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
 strong, .fieldset_header{
     font-weight: 900;
 }
@@ -92,6 +114,7 @@ fieldset{
     border: 0px;
     border-radius: 2%;
     box-shadow: 0px 5px 2px rgba(61, 61, 61, 0.418);
+    padding-left: 5%;
 }
 .column_container{
     display: flex;
@@ -103,4 +126,9 @@ fieldset{
     display:flex;
     flex-direction: column;
     width: 100%;
+}
+
+.spacer_container{
+    width: 5%;
+    height: 100%;
 }
