@@ -28,26 +28,37 @@
             <form action="https://httpbin.org/post" method = "post">
                 <fieldset>
                     <div class="fieldset_header">Sign Up Here!</div>
-                    <div class="column_container">
-                        <div class="left_column">
-                            <label for = "first_name"> First Name  </label>
-                            <input type ="text" name = "first_name" id = "first_name">
-                        
-                            <label for = "user_email"> Email </label>
-                            <input type = "email" id="user_email" name = "email">
-                            
-                            <label for="user_password">Password</label>
-                            <input type="password" id="user_password" name = "password">
+                    <div class="form_rows_container">
+                        <div class="row_one">
+                            <div class="form_left">
+                                <label for = "first_name"> First Name  </label>
+                                <input type ="text" name = "first_name" id = "first_name">
+                            </div>
+                            <div class="form_right">
+                                <label for = "last_name"> Last Name </label>
+                                <input type = "text" name = "last_name" id = "last_name">
+                            </div>
                         </div>
-                        <div class="right_column">
-                            <label for = "last_name"> Last Name </label>
-                            <input type = "text" name = "last_name" id = "last_name">
 
-                            <label for = "phone_number">Phone Number</label>
-                            <input type = "number" id = "phone_number" name = "phone_number">
-                            
-                            <label for="repeat_password">Repeat Password</label>
-                            <input type="password" id = "repeat_password" name = "repeat_password">
+                        <div class="row_two">
+                            <div class="form_left">
+                                <label for = "user_email"> Email </label>
+                                <input type = "email" id="user_email" name = "email">
+                            </div>
+                            <div class="form_right">
+                                <label for = "phone_number">Phone Number</label>
+                                <input type = "number" id = "phone_number" name = "phone_number">
+                            </div>
+                        </div>
+                        <div class="row_three">
+                            <div class="form_left">
+                                <label for="user_password">Password</label>
+                                <input type="password" id="user_password" name = "password"> 
+                            </div>
+                            <div class="form_right">
+                                <label for="repeat_password">Repeat Password</label>
+                                <input type="password" id = "repeat_password" name = "repeat_password">
+                            </div> 
                         </div>
                     </div>
                 </fieldset>
@@ -56,7 +67,7 @@
             <div>Already have an account? <a href = "https://www.reddit.com/r/gadgets" >Log In</a>
             </div>
         </div>
-        <div class="spacer_container"></div>
+        <divs class="spacer_container"></div>
             
     </div>
     
