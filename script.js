@@ -19,7 +19,10 @@ document.getElementById("confirm_password").addEventListener('input',function(){
     compare_passwords();
 })
 function compare_passwords(){
+    console.log("hello world")
     let user_password = document.getElementById("user_password");
     let confirmed_password = document.getElementById("confirm_password");
+   
     confirmed_password.pattern = user_password.value;
+    /*console.log(`User password is ${user_password.value} confirm password pattern is ${confirmed_password.pattern}`)*/
 }

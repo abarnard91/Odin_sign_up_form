@@ -54,7 +54,7 @@
                         <div class="row_three">
                             <div class="form_left">
                                 <label for="user_password">Password</label>
-                                <input type="password" id="user_password" name = "password" title = "Please include at least one lower case letter, one upper case letter, a number, a symbol, and at least 8 characters long" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8}$" required> 
+                                <input type="password" id="user_password" name = "password" title = "Please include at least one lower case letter, one upper case letter, a number, a symbol, and at least 8 characters long" pattern="^(?=.*\w)(?=.*\W)(?=.*\d).{8,}$" required> 
                             </div>
                             <div class="form_right">
                                 <label for="confirm_password">Confirm Password</label>
