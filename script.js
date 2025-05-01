@@ -14,3 +14,12 @@
     e.target.value = formattedInput;
 
 }) 
+
+document.getElementById("confirm_password").addEventListener('input',function(){ 
+    compare_passwords();
+})
+function compare_passwords(){
+    let user_password = document.getElementById("user_password");
+    let confirmed_password = document.getElementById("confirm_password");
+    confirmed_password.pattern = user_password.value;
+}
