@@ -33,18 +33,18 @@
                         <div class="row_one">
                             <div class="form_left">
                                 <label for = "first_name"> First Name  </label>
-                                <input type ="text" name = "first_name" id = "first_name"  placeholder="Alfred" >
+                                <input type ="text" name = "first_name" id = "first_name"  placeholder="Alfred" required>
                             </div>
                             <div class="form_right">
                                 <label for = "last_name"> Last Name </label>
-                                <input type = "text" name = "last_name" id = "last_name" placeholder="Donné" >
+                                <input type = "text" name = "last_name" id = "last_name" placeholder="Donné" required>
                             </div>
                         </div>
 
                         <div class="row_two">
                             <div class="form_left">
                                 <label for = "user_email"> Email </label>
-                                <input type = "email" id="user_email" name = "email" placeholder="adonné@hotmail.com" >
+                                <input type = "email" id="user_email" name = "email" placeholder="adonné@hotmail.com" required>
                             </div>
                             <div class="form_right">
                                 <label for = "phone_number">Phone Number</label>
@@ -54,7 +54,7 @@
                         <div class="row_three">
                             <div class="form_left">
                                 <label for="user_password">Password</label>
-                                <input type="password" id="user_password" name = "password" title = "Please include at least one lower case letter, one upper case letter, a number, a symbol, and at least 8 characters long" required> 
+                                <input type="password" id="user_password" name = "password" title = "Please include at least one lower case letter, one upper case letter, a number, a symbol, and at least 8 characters long" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8}$" required> 
                             </div>
                             <div class="form_right">
                                 <label for="confirm_password">Confirm Password</label>
